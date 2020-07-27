@@ -1,0 +1,10 @@
+#include <iostream.h>
+int main() 
+{
+   int a = 28, b = 8;
+   a += b -= a = b - a; // method 1
+   cout<<"After Swapping :"<< a<<"  "<< b;
+   (a ^= b), (b ^= a), (a ^= b); // method 2
+   cout<<"After Swapping :"<< a<<"  "<< b;
+   return 0;
+}
